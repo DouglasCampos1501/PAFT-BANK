@@ -132,7 +132,7 @@
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-8 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">R$ 321.000,23</h2>
+                          <h2 class="mb-0"id="balanceDisplay">Carregando...</h2>
                         </div>
                       </div>
                       <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
@@ -181,7 +181,7 @@
               </div>
             </div>
 
-            <!-- SEGUNGO BLOCO -->
+            <!-- SEGUNGO BLOCO 
             <div class="row">
               <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
@@ -267,85 +267,24 @@
                 
               </div>
             </div>
+            -->
 
             <!-- TERCEIRO BLOCO -->
             <div class="row">
               <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">EXTRATO CARTÂO CRÉDITO</h4>
+                    <h4 class="card-title">EXTRATO BANCÁRIO</h4>
                     <div class="table-responsive">
                       <table class="table">
                         <thead>
                           <tr>
                             <th> Instituição </th>
                             <th> Valor </th>
-                            <th> Método Pagamento </th>
-                            <th> Data </th>
-                            <th> Status</th>
+                            <th> Movimentação </th>
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <img src="img/avatar.jpg" alt="image" />
-                              <span class="ps-2">Posto Combustível 2L</span>
-                            </td>
-                            <td> R$ 187,00</td>
-                            <td> Crédito</td>
-                            <td> 19/11/2022</td>
-                            <td>
-                              <div class="badge badge-outline-success">Approved</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img src="img/avatar.jpg" alt="image" />
-                              <span class="ps-2">Lanchonete 7 Pães</span>
-                            </td>
-                            <td> R$ 58,00</td>
-                            <td> Crédito</td>
-                            <td> 18/11/2022</td>
-                            <td>
-                              <div class="badge badge-outline-success">Approved</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img src="img/avatar.jpg" alt="image" />
-                              <span class="ps-2">Lanchonete 7 Pães</span>
-                            </td>
-                            <td> R$ 58,00</td>
-                            <td> Crédito</td>
-                            <td> 18/11/2022</td>
-                            <td>
-                              <div class="badge badge-outline-danger">Rejected</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img src="img/avatar.jpg" alt="image" />
-                              <span class="ps-2">Churrascaria Paraiso</span>
-                            </td>
-                            <td> R$ 205,00</td>
-                            <td> Débito</td>
-                            <td> 17/11/2022</td>
-                            <td>
-                              <div class="badge badge-outline-success">Approved</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img src="img/avatar.jpg" alt="image" />
-                              <span class="ps-2">Papelaria da Esquina</span>
-                            </td>
-                            <td> R$ 64,00</td>
-                            <td> Débito</td>
-                            <td> 17/11/2022</td>
-                            <td>
-                              <div class="badge badge-outline-success">Approved</div>
-                            </td>
-                          </tr>
+                        <tbody id="tbodyTransaction">
                         </tbody>
                       </table>
                     </div>
@@ -363,5 +302,8 @@
     <script src="assets/js/hoverable-collapse.js"></script>
     <script src="assets/js/misc.js"></script>
     <script src="assets/js/todolist.js"></script>
+    <script src="./assets/js/balance.js"></script>
+    <script src="./assets/js/extract.js"></script>
+
   </body>
 </html>

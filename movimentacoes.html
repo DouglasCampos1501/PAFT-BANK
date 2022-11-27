@@ -18,74 +18,65 @@
         <!-- NAV LATERAL -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                <a class="sidebar-brand brand-logo" href="index.html"><img src="img/logo.svg" alt="logo" /></a>
-                <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="img/logo-mini.svg"
-                        alt="logo" /></a>
+              <a class="sidebar-brand brand-logo" href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+              <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="img/logo-mini.svg" alt="logo" /></a>
             </div>
             <ul class="nav">
-                <li class="nav-item nav-category">
-                    <span class="nav-link">Conta Pessoa Física</span>
-                </li>
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="index.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-speedometer"></i>
-                        </span>
-                        <span class="menu-title">Bem-vindo</span>
-                    </a>
-                </li>
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="extrato.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-calculator"></i>
-                        </span>
-                        <span class="menu-title">Extrato</span>
-                    </a>
-                </li>
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="pagamentos.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-barcode"></i>
-                        </span>
-                        <span class="menu-title">Movimentação</span>
-                    </a>
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="emprestimo.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-cached"></i>
-                        </span>
-                        <span class="menu-title">Empréstimo</span>
-                    </a>
-                </li>
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="cartoes.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-cards-outline"></i>
-                        </span>
-                        <span class="menu-title">Cartões</span>
-                    </a>
-                </li>
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="investimento.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-coin"></i>
-                        </span>
-                        <span class="menu-title">Investimentos</span>
-                    </a>
-                </li>
-                <li class="nav-item nav-category">
-                    <span class="nav-link">Logout</span>
-                </li>
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="login.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-exit-to-app"></i>
-                        </span>
-                        <span class="menu-title">SAIR</span>
-                    </a>
-                </li>
+              <li class="nav-item nav-category">
+                <span class="nav-link">Conta Pessoa Física</span>
+              </li>
+              <li class="nav-item menu-items">
+                <a class="nav-link" href="index.html">
+                  <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                  </span>
+                  <span class="menu-title">Bem-vindo</span>
+                </a>
+              </li>
+              <li class="nav-item menu-items">
+                <a class="nav-link" href="movimentacoes.html">
+                  <span class="menu-icon">
+                    <i class="mdi mdi-barcode"></i>
+                  </span>
+                  <span class="menu-title">Movimentação</span>
+                </a>
+              <li class="nav-item menu-items">
+                <a class="nav-link" href="emprestimo.html">
+                  <span class="menu-icon">
+                    <i class="mdi mdi-cached"></i>
+                  </span>
+                  <span class="menu-title">Empréstimo</span>
+                </a>
+              </li>
+              <li class="nav-item menu-items">
+                <a class="nav-link" href="cartoes.html">
+                  <span class="menu-icon">
+                    <i class="mdi mdi-cards-outline"></i>
+                  </span>
+                  <span class="menu-title">Cartões</span>
+                </a>
+              </li>
+              <li class="nav-item menu-items">
+                <a class="nav-link" href="investimento.html">
+                  <span class="menu-icon">
+                    <i class="mdi mdi-coin"></i>
+                  </span>
+                  <span class="menu-title">Investimentos</span>
+                </a>
+              </li>
+              <li class="nav-item nav-category">
+                <span class="nav-link">Logout</span>
+              </li>
+              <li class="nav-item menu-items">
+                <a class="nav-link" href="login.html">
+                  <span class="menu-icon">
+                    <i class="mdi mdi-exit-to-app"></i>
+                  </span>
+                  <span class="menu-title">SAIR</span>
+                </a>
+              </li>
             </ul>
-        </nav>
+          </nav>
         <div class="container-fluid page-body-wrapper">
             <!-- NAV Superior-->
             <nav class="navbar p-0 fixed-top d-flex flex-row">
@@ -134,87 +125,24 @@
                 <div class="content-wrapper">
 
                     <!-- PRIMEIRO BLOCO -->
-                    <div class="row">
-                        <div class="col-sm-4 grid-margin">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5>SALDO</h5>
-                                    <div class="row">
-                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
-                                                <h2 class="mb-0" id="balanceDisplay"></h2>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                                            <i class="icon-lg mdi mdi-cash text-success ms-auto"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 grid-margin">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5>CARTÃO</h5>
-                                    <div class="row">
-                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
-                                                <h2 class="mb-0">R$ 1.000,23</h2>
-                                            </div>
-                                            <h6 class="text-muted font-weight-normal"> Vencimento: 12/12/2022</h6>
-                                        </div>
-                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                                            <i class="icon-lg mdi mdi-cards-outline text-danger ms-auto"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 grid-margin">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5>INVESTIMENTOS</h5>
-                                    <div class="row">
-                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
-                                                <h2 class="mb-0">R$ 20.478,00</h2>
-                                                <p class="text-danger ms-2 mb-0 font-weight-medium">-2.1% </p>
-                                            </div>
-                                            <h6 class="text-muted font-weight-normal">2.27% Lucro esse mês</h6>
-                                        </div>
-                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                                            <i class="icon-lg mdi mdi-chart-bar text-info ms-auto"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- SEGUNGO BLOCO -->
+
                     <div class="row">
                         <div class="col-md-4 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                  <h4 class="card-title">ÚLTIMAS MOVIMENTAÇÕES</h4>
-                                  <div class="table-responsive">
-                                    <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th> Instituição </th>
-                                          <th> Valor </th>
-                                          <th> Crd./Deb. </th>
-                                        </tr>
-                                      </thead>
-                                      <tbody id="tbodyTransaction">
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-8 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
+                                    <h5>SALDO</h5>
+                                    <div class="row">
+                                      <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                        <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                          <h2 class="mb-0" id="balanceDisplay">Carregando...</h2>
+                                        </div>
+                                        <h6 class="text-muted font-weight-normal"> Valor atualizado</h6>
+                                      </div>
+                                      <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                        <i class="icon-lg mdi mdi-cash text-success ms-auto"></i>
+                                      </div>
+                                    </div>
+                                    <br/> <br/>
                                     <h4 class="card-title">MOVIMENTAÇÂO BANCÁRIA</h4>
                                     <p class="card-description">Efetue abaixo seus pagamentos (-) /depósitos </p>
                                     <form id="formMovement">
@@ -279,6 +207,28 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-8 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">EXTRATO CONTA CORRENTE</h4>
+                                  <p class="card-description">Descrição dos último movimentos em sua c/c </p>
+                                  <div class="table-responsive">
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th> <strong>Instituição</strong> </th>
+                                          <th> <strong>Valor</strong> </th>
+                                          <th> <strong>Crd./Deb. </strong></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody id="tbodyTransaction">
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -295,7 +245,9 @@
     <script src="./assets/js/off-canvas.js"></script>
     <script src="./assets/js/hoverable-collapse.js"></script>
     <script src="./assets/js/misc.js"></script>
+    
     <script src="./assets/js/transactions.js"></script>
+
 
 </body>
 

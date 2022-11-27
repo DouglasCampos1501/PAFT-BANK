@@ -1,22 +1,22 @@
 Contexto: Internet Banking
 Crie um sistema de banco em html, css e js.
 Algumas telas que são requeridas:
-•    Tela de login; - OK
-•    Tela de extrato;
-•    Tela de empréstimo
-•    Tela de pagamento de boleto
+OK    Tela de login; - OK
+OK    Tela de extrato;
+OK   Tela de empréstimo
+OK    Tela de pagamento de boleto - OK
 
 Você poderá propor outras telas que você achar útil para o sistema. 
-•    O sistema deverá ter um menu sanduiche/hamburger.
-•    Ter pelo menos uma classe (POO) sendo utilizada.
-•    Fazer uso de programação assíncrona (primises/async/await).
+OK    O sistema deverá ter um menu sanduiche/hamburger.
+OK    Ter pelo menos uma classe (POO) sendo utilizada.
+OK    Fazer uso de programação assíncrona (primises/async/await).
 •    Fazer uso de TDD (ter pelo menos um teste).
-•    Realizar inserção e remoção de elementos no DOM por JS.
-•    Realizar modificações de style por JS.
-•    Ter um form e validar todos os campos do form por JS (principalmente CEP, telefone e email).
+OK    Realizar inserção e remoção de elementos no DOM por JS.
+OK    Realizar modificações de style por JS.
+OK    Ter um form e validar todos os campos do form por JS (principalmente CEP, telefone e email).
 Desafios extras:
-•    Uso de Sass. 
-•    Fazer responsivo e considerando para funcionar em mobile e tablet (media queries);
+OK    Uso de Sass. 
+OK    Fazer responsivo e considerando para funcionar em mobile e tablet (media queries);
 
 Entrega:
 •    Link do github com o projeto

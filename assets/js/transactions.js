@@ -4,14 +4,10 @@ const formMovement = document.querySelector('#formMovement');
 const inputAmount = document.querySelector('#inputAmount');
 const inputName = document.querySelector('#inputName');
 
-const transactionsDummy = [
-    { id: 1, name: 'Transferência Salário', amount: 4780 },
-    { id: 2, name: 'Lanchonete 7 Pães', amount: -58 },
-    { id: 3, name: 'Churrascaria Paraiso', amount: -205 },
-    { id: 4, name: 'Papelaria da Esquina', amount: -64 },
-    { id: 5, name: 'Depóstio em conta', amount: 500 },
-    { id: 6, name: 'Posto de gasolina 2L', amount: -187 }
-];
+const localStorageTransactions = JSON.parse(localStorage
+    .getItem('transactions'))
+let transactions = localStorage
+    .getItem('transactions') !== null ? localStorageTransactions : []
 
 const addTransactionInFront = transaction =>{
     const operator = transaction.amount < 0 ? '-' : '+';
@@ -23,7 +19,7 @@ const addTransactionInFront = transaction =>{
     newTd.innerHTML = `
           <tr>
               <td> ${transaction.name} </td>
-              <td style="text-align: right;"> R$ ${removeOperator} </td>
+              <td > R$ ${removeOperator} </td>
               <td>
                   <div class="badge ${badgeClass}"> ${operatorName} </div>
               </td>
@@ -33,19 +29,25 @@ const addTransactionInFront = transaction =>{
 }
 
 const updateBalance = () => {
-    const transactionAmounts = transactionsDummy.map(transaction => transaction.amount)
+    const transactionAmounts = transactions.map(transaction => transaction.amount)
     const balance = transactionAmounts.reduce((accumulator, transaction) => accumulator + transaction, 0).toLocaleString('pt-br', {minimumFractionDigits: 2})
-    balanceDisplay.textContent = `R$ ${balance}`
+    setTimeout(() => {
+        balanceDisplay.innerHTML = `R$ ${balance}`
+    }, 1000);
 }
 
 
 const statusInit = () => {
     tbodyTransaction.innerHTML = ''
-    transactionsDummy.forEach(addTransactionInFront)
+    transactions.forEach(addTransactionInFront)
     updateBalance()
 }
 
 statusInit();
+
+const updataLocalStorage = () => {
+    localStorage.setItem('transactions', JSON.stringify(transactions))
+}
 
 const generateID = () => Math.round(Math.random() * 1000)
 
@@ -63,11 +65,12 @@ formMovement.addEventListener('submit', event => {
     const transaction = { 
         id: generateID(), 
         name: transactionName, 
-        amount: transactionAmount 
+        amount: Number(transactionAmount) 
     }
 
-    transactionsDummy.push(transaction)
+    transactions.push(transaction)
     statusInit()
+    updataLocalStorage()
 
     inputName.value = ''
     inputAmount.value = ''
