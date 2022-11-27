@@ -23,3 +23,18 @@ const load = loadAmount.reduce((accumulator, transaction) => accumulator + trans
 setTimeout(() => {
     loadDisplay.innerHTML = `R$ ${load}`
 }, 1500);
+
+//TESTE TDD Aplicação de DESCONTO
+function aplicarDescontoTest(){
+    return aplicarDesconto(10,2) === 8;
+ }
+ 
+ console.log('A aplicação de desconto está funcionando? ');
+ console.log(aplicarDescontoTest());
+
+ aplicarDescontoTest();
+
+ 
+function aplicarDesconto(valor, desconto){
+   return valor - desconto;
+}
