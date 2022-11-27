@@ -3,6 +3,10 @@ const balanceDisplay = document.querySelector('#balanceDisplay');
 const formMovement = document.querySelector('#formMovement');
 const inputAmount = document.querySelector('#inputAmount');
 const inputName = document.querySelector('#inputName');
+const inputPIX = document.querySelector('#inputPIX');
+const cep = document.querySelector('#cep');
+const telefone = document.querySelector('#telefone');
+const email = document.querySelector('#email');
 
 const localStorageTransactions = JSON.parse(localStorage
     .getItem('transactions'))
@@ -74,6 +78,10 @@ formMovement.addEventListener('submit', event => {
 
     inputName.value = ''
     inputAmount.value = ''
+    inputPIX.value = ''
+    cep.value = ''
+    telefone.value = ''
+    email.value = ''
 
 
 })

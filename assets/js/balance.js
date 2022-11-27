@@ -19,8 +19,6 @@ setTimeout(() => {
 
 const transactionLoad = converter.filter(transaction => transaction.name == 'Empréstimo plataforma')
 const loadAmount = transactionLoad.map(transaction => transaction.amount)
-console.log(loadAmount)
-
 const load = loadAmount.reduce((accumulator, transaction) => accumulator + transaction, 0).toLocaleString('pt-br', { minimumFractionDigits: 2 })
 setTimeout(() => {
     loadDisplay.innerHTML = `R$ ${load}`
